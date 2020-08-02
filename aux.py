@@ -34,7 +34,10 @@ def get_statistics_by_lang(vacancies, predict_salary_func, popular_languages):
             if predicted_rub_salary is not None:          
                 salaries_by_lang.append(predicted_rub_salary)
         number_of_salaries_to_calc_avg = len(salaries_by_lang)
-        statistics_by_lang[language]['average_salary'] = int(sum(salaries_by_lang) / number_of_salaries_to_calc_avg)
+        try:
+            statistics_by_lang[language]['average_salary'] = int(sum(salaries_by_lang) / number_of_salaries_to_calc_avg)
+        except ZeroDivisionError:
+            statistics_by_lang[language]['average_salary'] = 0
         statistics_by_lang[language]['vacancies_processed'] = number_of_salaries_to_calc_avg
     return statistics_by_lang
 

@@ -3,7 +3,7 @@
 This is python console app making statistics with vacancies and average salary by programming languages using API
 of two popular russian job websites - HeadHunter and SuperJob
 
-### How to install
+### How to use
 
 You'll need to create an environment variable or create a .env file with your SuperJob token:
 ```
