@@ -1,4 +1,4 @@
-# Programming vacancies compare
+# Comparison of vacancies for programmers
 
 This is python console app making statistics with vacancies and average salary by programming languages using API
 of two popular russian job websites - HeadHunter and SuperJob
@@ -52,7 +52,3 @@ Then use `pip` (or `pip3`, if there is a conflict with Python2) to install depen
 ```
 pip install -r requirements.txt
 ```
-
-### Project Goals
-
-The code is written for educational purposes on online-course for web-developers [dvmn.org](https://dvmn.org/).
